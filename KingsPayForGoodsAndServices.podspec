@@ -1,15 +1,26 @@
 Pod::Spec.new do |s|
-    s.name                            = "KingsPayForGoodsAndServices"
-    s.version                         = "0.1.0"
-    s.summary                         = "KingsPayForGoodsAndServices SDK"
-    s.description                     = <<-DESC
+    s.name                           = "KingsPayForGoodsAndServices"
+    s.version                        = "0.1.1"
+    s.summary                        = "KingsPayForGoodsAndServices SDK"
+    s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
     DESC
-    s.homepage                        = "https://kingspay-gs.com"
-    s.license                         = { :type => 'Apache License 2.0', :text => <<-LICENSE
+    s.homepage                       = "https://kingspay-gs.com"
+    s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com" }
+    s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
+    s.public_header_files            = "Source/GS.framework/Headers/*.h"
+    s.source_files                   = "Source/GS.framework/Headers/*.h"
+    s.vendored_frameworks            = "Source/*.framework"
+    s.platform                       = :ios
+    s.swift_version                  = "5.0"
+    s.ios.deployment_target          = '11.0'
+    s.user_target_xcconfig           = {
+      'SWIFT_INCLUDE_PATHS' => '"\$(PODS_ROOT)/**"'
+    }
+    s.license                        = { :type => 'Apache License 2.0', :text => <<-LICENSE
     Apache License
     Version 2.0, January 2004
- http://www.apache.org/licenses/
+    http://www.apache.org/licenses/
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -210,13 +221,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
                   LICENSE
-                }
-    s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com" }
-    s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
-    s.public_header_files            = "Source/GS.framework/Headers/*.h"
-    s.source_files                   = "Source/GS.framework/Headers/*.h"
-    s.vendored_frameworks            = "Source/*.framework"
-    s.platform                       = :ios
-    s.swift_version                  = "5.0"
-    s.ios.deployment_target          = '11.0'
+  }
 end
