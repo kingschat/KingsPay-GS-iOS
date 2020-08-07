@@ -1,0 +1,11 @@
+framework module GS {
+  umbrella header "GS.h"
+
+  export *
+  module * { export * }
+}
+
+module GS.Swift {
+    header "GS-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module GSUI {
+  umbrella header "GSUI.h"
+
+  export *
+  module * { export * }
+}
+
+module GSUI.Swift {
+    header "GSUI-Swift.h"
+    requires objc
+}
