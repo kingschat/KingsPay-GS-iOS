@@ -1,0 +1,1 @@
+zip -r KingsPayForGoodsAndServices.zip LICENSE Source

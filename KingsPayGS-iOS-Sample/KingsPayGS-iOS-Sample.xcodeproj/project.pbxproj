@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -98,7 +98,6 @@
 				59E0E2DC666E3D7CB675F58A /* Pods-KingsPayGS-iOS-Sample.debug.xcconfig */,
 				D81ADE31B0454D861E7F9577 /* Pods-KingsPayGS-iOS-Sample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -382,7 +381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingschat.KingsPayGS-iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/** $(PODS_ROOT)/KingsPayForGoodsAndServices/Source/GS.framework/Modules/GS.swiftmodule/";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,7 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingschat.KingsPayGS-iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/** $(PODS_ROOT)/KingsPayForGoodsAndServices/Source/GS.framework/Modules/GS.swiftmodule/";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,21 +1,16 @@
 PODS:
-  - KingsPayForGoodsAndServices (0.1.0)
-  - MBProgressHUD (1.2.0)
+  - KingsPayForGoodsAndServices (0.1.1)
 
 DEPENDENCIES:
-  - KingsPayForGoodsAndServices (= 0.1.0)
-  - MBProgressHUD
+  - KingsPayForGoodsAndServices (= 0.1.1)
 
 SPEC REPOS:
   "git@github.com:kingschat/KingsPay-GS-iOS.git":
     - KingsPayForGoodsAndServices
-  trunk:
-    - MBProgressHUD
 
 SPEC CHECKSUMS:
-  KingsPayForGoodsAndServices: c5fa32bf38ff8bf5a2299362cddc51237bdfdc80
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  KingsPayForGoodsAndServices: 15bcef5b5087b68b8f8c9bf4d02b1d97be099b9a
 
-PODFILE CHECKSUM: c7452d99cc1d0268aee2c4fdae4d3f9fb5e14431
+PODFILE CHECKSUM: 67e238fc2f9679eb5672d9c0d1ee7ce4fd46e940
 
 COCOAPODS: 1.9.3

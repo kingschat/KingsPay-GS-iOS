@@ -1,9 +1,8 @@
-plugin 'cocoapods-binary'
 source 'https://cdn.cocoapods.org/'
 
 platform :ios, '11.0'
 
 target 'KingsPayGS-iOS-Sample' do
-    use_frameworks!
-    pod 'KingsPayForGoodsAndServices', '0.1.0', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git", :binary => true
+    use_frameworks! :linkage => :static
+    pod 'KingsPayForGoodsAndServices', '0.1.1', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end

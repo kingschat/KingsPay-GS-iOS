@@ -7,22 +7,22 @@
 //
 
 import UIKit
-import 
+//import KingsPayForGoodsAndServices
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        KingsPayForGoodsAndServices.pay(
-            usingContext: KingsPayForGoodsAndServices.PresentationContext(
-                controller: self,
-                completion: { paymentResult in print(paymentResult) }
-            ),
-            config: KingsPayForGoodsAndServices.PaymentConfig(
-                paymentId: "",
-                clientId: "",
-                environment: .production
-            )
-        )
+//        KingsPayForGoodsAndServices.pay(
+//            usingContext: KingsPayForGoodsAndServices.PresentationContext(
+//                controller: self,
+//                completion: { paymentResult in print(paymentResult) }
+//            ),
+//            config: KingsPayForGoodsAndServices.PaymentConfig(
+//                paymentId: "",
+//                clientId: "",
+//                environment: .production
+//            )
+//        )
     }
 }
