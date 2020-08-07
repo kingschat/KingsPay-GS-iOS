@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
     s.name                           = "KingsPayForGoodsAndServices"
-    s.version                        = "0.1.2"
+    s.version                        = "0.1.3"
     s.summary                        = "KingsPayForGoodsAndServices SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
     DESC
     s.homepage                       = "https://kingspay-gs.com"
     s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com" }
-    s.source                         = { :http => 'https://github.com/kingschat/KingsPay-GS-iOS/KingsPayForGoodsAndServices.zip' }
+    s.source                         = { :http => "https://github.com/kingschat/KingsPay-GS-iOS/KingsPayForGoodsAndServices.zip" }
     s.vendored_frameworks            = "Source/*.framework"
     s.platform                       = :ios
     s.swift_version                  = "5.0"
