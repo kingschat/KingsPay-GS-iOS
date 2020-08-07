@@ -8,15 +8,10 @@ Pod::Spec.new do |s|
     s.homepage                       = "https://kingspay-gs.com"
     s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com" }
     s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
-    s.public_header_files            = "Source/GS.framework/Headers/*.h"
-    s.source_files                   = "Source/GS.framework/Headers/*.h"
     s.vendored_frameworks            = "Source/*.framework"
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
-    s.user_target_xcconfig           = {
-      'SWIFT_INCLUDE_PATHS' => '"\$(PODS_ROOT)/**"'
-    }
     s.license                        = { :type => 'Apache License 2.0', :text => <<-LICENSE
     Apache License
     Version 2.0, January 2004
