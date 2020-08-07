@@ -12,6 +12,7 @@
 		2D6B792424DC0B7800805846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6B792224DC0B7800805846 /* Main.storyboard */; };
 		2D6B792624DC0B7B00805846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6B792524DC0B7B00805846 /* Assets.xcassets */; };
 		2D6B792924DC0B7B00805846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6B792724DC0B7B00805846 /* LaunchScreen.storyboard */; };
+		61CD79374A30042CD36D4EEC /* Pods_KingsPayGS_iOS_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF0132FBFA3D9D37721EC98 /* Pods_KingsPayGS_iOS_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,9 @@
 		2D6B792524DC0B7B00805846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D6B792824DC0B7B00805846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D6B792A24DC0B7B00805846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E0E2DC666E3D7CB675F58A /* Pods-KingsPayGS-iOS-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsPayGS-iOS-Sample.debug.xcconfig"; path = "Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF0132FBFA3D9D37721EC98 /* Pods_KingsPayGS_iOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsPayGS_iOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81ADE31B0454D861E7F9577 /* Pods-KingsPayGS-iOS-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsPayGS-iOS-Sample.release.xcconfig"; path = "Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CD79374A30042CD36D4EEC /* Pods_KingsPayGS_iOS_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0B836B2F16BB9586F7F103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0132FBFA3D9D37721EC98 /* Pods_KingsPayGS_iOS_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D6B791024DC0B7800805846 = {
 			isa = PBXGroup;
 			children = (
 				2D6B791B24DC0B7800805846 /* KingsPayGS-iOS-Sample */,
 				2D6B791A24DC0B7800805846 /* Products */,
+				B4D1ED28513B17BF1845523C /* Pods */,
+				1A0B836B2F16BB9586F7F103 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +92,16 @@
 			path = "KingsPayGS-iOS-Sample";
 			sourceTree = "<group>";
 		};
+		B4D1ED28513B17BF1845523C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59E0E2DC666E3D7CB675F58A /* Pods-KingsPayGS-iOS-Sample.debug.xcconfig */,
+				D81ADE31B0454D861E7F9577 /* Pods-KingsPayGS-iOS-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,10 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D6B792D24DC0B7B00805846 /* Build configuration list for PBXNativeTarget "KingsPayGS-iOS-Sample" */;
 			buildPhases = (
+				EFD697399A20643873BCBC38 /* [CP] Check Pods Manifest.lock */,
 				2D6B791524DC0B7800805846 /* Sources */,
 				2D6B791624DC0B7800805846 /* Frameworks */,
 				2D6B791724DC0B7800805846 /* Resources */,
 				2D6B793824DC0E7E00805846 /* Embed Frameworks */,
+				2300CCBE9B61D1DF7BF82E24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2300CCBE9B61D1DF7BF82E24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFD697399A20643873BCBC38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsPayGS-iOS-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D6B791524DC0B7800805846 /* Sources */ = {
@@ -292,6 +361,7 @@
 		};
 		2D6B792E24DC0B7B00805846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E0E2DC666E3D7CB675F58A /* Pods-KingsPayGS-iOS-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +390,7 @@
 		};
 		2D6B792F24DC0B7B00805846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81ADE31B0454D861E7F9577 /* Pods-KingsPayGS-iOS-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

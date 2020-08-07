@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import KingsPayForGoodsAndServices
+import 
 
 class ViewController: UIViewController {
 
