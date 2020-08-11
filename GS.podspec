@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
     s.dependency                     'AFNetworking', '~> 4.0.1'
     s.dependency                     'RxSwift', '~> 5.0.1'
     s.dependency                     'SwiftyRSA', '~> 1.5.0'
-    s.dependency                     'SwiftyRSA', '~> 1.5.0'
-    s.dependency                     'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
+    s.dependency                     'SPTPersistentCache'
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
