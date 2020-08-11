@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                           = "GS"
-    s.version                        = "0.1.0"
+    s.version                        = "0.1.1"
     s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
@@ -9,11 +9,7 @@ Pod::Spec.new do |s|
     s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com", "Fatih Emre" => "emre.fatih@appunite.com", "Hubert Drąg" => "hubert.drag@appunite.com" }
     s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
-    s.dependency                     'AFNetworking', '~> 4.0.1'
-    s.dependency                     'RxSwift', '~> 5.0.1'
-    s.dependency                     'SwiftyRSA', '~> 1.5.0'
-    s.dependency                     'SwiftyRSA', '~> 1.5.0'
-    s.dependency                     'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
+    s.source_files                   = "Source/GS.framework/Headers/*.h"
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
