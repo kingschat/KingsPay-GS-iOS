@@ -3,6 +3,6 @@ source 'https://cdn.cocoapods.org/'
 platform :ios, '11.0'
 
 target 'KingsPayGS-iOS-Sample' do
-    use_frameworks! :linkage => :static
-    pod 'GS', '0.1.0', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+    use_frameworks!
+    pod 'GS', '0.1.1'
 end
