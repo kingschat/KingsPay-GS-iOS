@@ -1,14 +1,19 @@
 Pod::Spec.new do |s|
-    s.name                           = "KingsPayForGoodsAndServices"
-    s.version                        = "0.1.3"
-    s.summary                        = "KingsPayForGoodsAndServices SDK"
+    s.name                           = "GS"
+    s.version                        = "0.1.0"
+    s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
     DESC
     s.homepage                       = "https://kingspay-gs.com"
-    s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com" }
-    s.source                         = { :http => "https://github.com/kingschat/KingsPay-GS-iOS/KingsPayForGoodsAndServices.zip" }
+    s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com", "Fatih Emre" => "emre.fatih@appunite.com", "Hubert Drąg" => "hubert.drag@appunite.com" }
+    s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
+    s.dependency                     'AFNetworking', '~> 4.0.1'
+    s.dependency                     'RxSwift', '~> 5.0.1'
+    s.dependency                     'SwiftyRSA', '~> 1.5.0'
+    s.dependency                     'SwiftyRSA', '~> 1.5.0'
+    s.dependency                     'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
@@ -201,7 +206,7 @@ file or class name and description of purpose be included on the
 same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2020 AppUnite
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
