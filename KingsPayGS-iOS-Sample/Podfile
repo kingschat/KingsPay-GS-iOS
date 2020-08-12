@@ -1,8 +1,9 @@
 source 'https://cdn.cocoapods.org/'
+source 'https://github.com/kingschat/KingsPay-GS-iOS'
 
 platform :ios, '11.0'
 
 target 'KingsPayGS-iOS-Sample' do
     use_frameworks!
-    pod 'GS', '0.1.1'
+    pod 'GS', '0.1.2', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end

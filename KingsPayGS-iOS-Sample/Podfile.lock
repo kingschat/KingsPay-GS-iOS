@@ -1,0 +1,16 @@
+PODS:
+  - GS (0.1.2)
+
+DEPENDENCIES:
+  - GS (= 0.1.2)
+
+SPEC REPOS:
+  "git@github.com:kingschat/KingsPay-GS-iOS.git":
+    - GS
+
+SPEC CHECKSUMS:
+  GS: 4b1982f3ff74f251a59269c618a7fa826c3549c7
+
+PODFILE CHECKSUM: f2d84fa2262446a54f9a996460ab6ef95d2c3bd1
+
+COCOAPODS: 1.9.3
