@@ -1,16 +1,61 @@
 PODS:
-  - GS (0.1.2)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - GS (0.1.4):
+    - RxSwift (~> 5.0.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SPTPersistentCache (1.1.0)
+  - SwiftyRSA (1.6.0):
+    - SwiftyRSA/ObjC (= 1.6.0)
+  - SwiftyRSA/ObjC (1.6.0)
 
 DEPENDENCIES:
-  - GS (= 0.1.2)
+  - AFNetworking
+  - GS (= 0.1.4)
+  - RxCocoa
+  - RxRelay
+  - RxSwift
+  - SPTPersistentCache
+  - SwiftyRSA
 
 SPEC REPOS:
   "git@github.com:kingschat/KingsPay-GS-iOS.git":
     - GS
+  trunk:
+    - AFNetworking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SPTPersistentCache
+    - SwiftyRSA
 
 SPEC CHECKSUMS:
-  GS: 4b1982f3ff74f251a59269c618a7fa826c3549c7
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  GS: 435c0c43903e6c36cf990d4d949b14ec8e32d723
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SPTPersistentCache: df36ea46762d7cf026502bbb86a8b79d0080dff4
+  SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
 
-PODFILE CHECKSUM: f2d84fa2262446a54f9a996460ab6ef95d2c3bd1
+PODFILE CHECKSUM: 41c9502683650745a44e333a24cd1e0b58a1ace9
 
 COCOAPODS: 1.9.3
