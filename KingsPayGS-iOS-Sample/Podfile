@@ -5,5 +5,5 @@ platform :ios, '11.0'
 
 target 'KingsPayGS-iOS-Sample' do
     use_frameworks!
-    pod 'GS', '0.1.2', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+    pod 'GS', '0.1.3', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end
