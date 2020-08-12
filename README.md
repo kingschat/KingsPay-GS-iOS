@@ -29,7 +29,7 @@ target 'YOUR_TARGET_NAME' do
     pod 'RxCocoa'
     pod 'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
     pod 'SwiftyRSA'
-    pod 'GS', '$(SDK_VERSION)', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+    pod 'GS', '0.1.4', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end
 ```
 Replace YOUR_TARGET_NAME and then, in the Podfile directory, type:
