@@ -10,9 +10,8 @@ import UIKit
 import GS
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         KingsPayForGoodsAndServices.pay(
             usingContext: KingsPayForGoodsAndServices.PresentationContext(
                 controller: self,
@@ -20,8 +19,8 @@ class ViewController: UIViewController {
             ),
             config: KingsPayForGoodsAndServices.PaymentConfig(
                 paymentId: "",
-                clientId: "",
-                environment: .production
+                clientId: "udwfe77w334hbr3d9f9wefnjwe02",
+                environment: .staging
             )
         )
     }

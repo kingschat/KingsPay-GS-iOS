@@ -213,6 +213,15 @@ SWIFT_CLASS("_TtC2UI23ActivityIndicatorButton")
 
 
 
+SWIFT_CLASS("_TtC2UI15BottomSheetView")
+@interface BottomSheetView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 
 
 
@@ -225,6 +234,7 @@ SWIFT_CLASS("_TtC2UI14CurrenciesView")
 
 
 
+@class UITraitCollection;
 
 SWIFT_CLASS("_TtC2UI12GradientView")
 @interface GradientView : UIView
@@ -232,6 +242,7 @@ SWIFT_CLASS("_TtC2UI12GradientView")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
 
 
@@ -275,6 +286,15 @@ SWIFT_CLASS("_TtC2UI13LinkableLabel")
 SWIFT_CLASS("_TtC2UI9NeverView")
 @interface NeverView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC2UI14RefreshControl")
+@interface RefreshControl : UIRefreshControl
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
