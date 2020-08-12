@@ -18,9 +18,8 @@ class ViewController: UIViewController {
                 completion: { paymentResult in print(paymentResult) }
             ),
             config: KingsPayForGoodsAndServices.PaymentConfig(
-                paymentId: "",
-                clientId: "udwfe77w334hbr3d9f9wefnjwe02",
-                environment: .staging
+                paymentId: "YOUR_PAYMENT_ID",
+                clientId: "YOUR_CLIENT_ID"
             )
         )
     }

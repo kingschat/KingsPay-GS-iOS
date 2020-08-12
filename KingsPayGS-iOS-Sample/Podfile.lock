@@ -14,12 +14,15 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - GS (0.1.5):
+  - Amplitude (5.2.1)
+  - GS (0.1.7):
     - AFNetworking (~> 4.0.1)
+    - Amplitude (~> 5.2.1)
     - RxCocoa (~> 5.0.1)
     - RxRelay (~> 5.0.1)
     - RxSwift (~> 5.0.1)
     - SPTPersistentCache
+    - SwiftProtobuf (~> 1.8.0)
     - SwiftyRSA (~> 1.5.0)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
@@ -28,17 +31,20 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
   - SPTPersistentCache (1.1.1)
+  - SwiftProtobuf (1.8.0)
   - SwiftyRSA (1.5.0):
     - SwiftyRSA/ObjC (= 1.5.0)
   - SwiftyRSA/ObjC (1.5.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - GS (= 0.1.5)
+  - Amplitude
+  - GS (= 0.1.7)
   - RxCocoa
   - RxRelay
   - RxSwift
   - SPTPersistentCache (from `https://github.com/spotify/SPTPersistentCache`, commit `697e464b6173063f526ec57f42221a4a94dcc86a`)
+  - SwiftProtobuf
   - SwiftyRSA
 
 SPEC REPOS:
@@ -46,9 +52,11 @@ SPEC REPOS:
     - GS
   trunk:
     - AFNetworking
+    - Amplitude
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SwiftProtobuf
     - SwiftyRSA
 
 EXTERNAL SOURCES:
@@ -63,13 +71,15 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  GS: bc34c493a94a6f1f96b60242ade5b349cff7131e
+  Amplitude: 9774e93d48d9f41f271a4479e06369a30ab31db1
+  GS: 58d2fbd333c9abdd0f23806f3ce3f52998d86578
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SPTPersistentCache: e963e9dfaf612996b0d3898bd17809047cc3f1f0
+  SwiftProtobuf: 2cbd9409689b7df170d82a92a33443c8e3e14a70
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
 
-PODFILE CHECKSUM: 3c5a4734d132f4f9b27003f70a9d93f99437df09
+PODFILE CHECKSUM: 0153eef57ff3ce74c910fc67b192240d4d8d5473
 
 COCOAPODS: 1.9.3

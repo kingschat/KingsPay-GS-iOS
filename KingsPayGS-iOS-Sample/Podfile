@@ -11,5 +11,7 @@ target 'KingsPayGS-iOS-Sample' do
     pod 'RxCocoa'
     pod 'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
     pod 'SwiftyRSA'
-    pod 'GS', '0.1.5', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+	pod 'Amplitude'
+	pod 'SwiftProtobuf'
+    pod 'GS', '0.1.7', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end
