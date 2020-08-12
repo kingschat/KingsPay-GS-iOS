@@ -14,26 +14,31 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - GS (0.1.4):
+  - GS (0.1.5):
+    - AFNetworking (~> 4.0.1)
+    - RxCocoa (~> 5.0.1)
+    - RxRelay (~> 5.0.1)
     - RxSwift (~> 5.0.1)
-  - RxCocoa (5.1.1):
+    - SPTPersistentCache
+    - SwiftyRSA (~> 1.5.0)
+  - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.1.1):
+  - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
-  - SPTPersistentCache (1.1.0)
-  - SwiftyRSA (1.6.0):
-    - SwiftyRSA/ObjC (= 1.6.0)
-  - SwiftyRSA/ObjC (1.6.0)
+  - SPTPersistentCache (1.1.1)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - GS (= 0.1.4)
+  - GS (= 0.1.5)
   - RxCocoa
   - RxRelay
   - RxSwift
-  - SPTPersistentCache
+  - SPTPersistentCache (from `https://github.com/spotify/SPTPersistentCache`, commit `697e464b6173063f526ec57f42221a4a94dcc86a`)
   - SwiftyRSA
 
 SPEC REPOS:
@@ -44,18 +49,27 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SPTPersistentCache
     - SwiftyRSA
+
+EXTERNAL SOURCES:
+  SPTPersistentCache:
+    :commit: 697e464b6173063f526ec57f42221a4a94dcc86a
+    :git: https://github.com/spotify/SPTPersistentCache
+
+CHECKOUT OPTIONS:
+  SPTPersistentCache:
+    :commit: 697e464b6173063f526ec57f42221a4a94dcc86a
+    :git: https://github.com/spotify/SPTPersistentCache
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  GS: 435c0c43903e6c36cf990d4d949b14ec8e32d723
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  GS: bc34c493a94a6f1f96b60242ade5b349cff7131e
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  SPTPersistentCache: df36ea46762d7cf026502bbb86a8b79d0080dff4
-  SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
+  SPTPersistentCache: e963e9dfaf612996b0d3898bd17809047cc3f1f0
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
 
-PODFILE CHECKSUM: 41c9502683650745a44e333a24cd1e0b58a1ace9
+PODFILE CHECKSUM: 3c5a4734d132f4f9b27003f70a9d93f99437df09
 
 COCOAPODS: 1.9.3
