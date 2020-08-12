@@ -13,12 +13,28 @@ Create your Merchant account following the section 1 of the [Developer's Guide](
 
 ## Installation
 
-#### [Carthage](https://github.com/Carthage/Carthage)
-1 - add following into the Cartfile:
+#### [CocoaPods](https://cocoapods.org)
+1 - add following into the Podfile:
 ```
-github "kingschat/KingsPay-GS-iOS" "master"
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/kingschat/KingsPay-GS-iOS'
+
+platform :ios, '11.0'
+
+target 'YOUR_TARGET_NAME' do
+    use_frameworks!
+    pod 'AFNetworking'
+    pod 'RxSwift'
+    pod 'RxRelay'
+    pod 'RxCocoa'
+    pod 'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
+    pod 'SwiftyRSA'
+    pod 'GS', '$(SDK_VERSION)', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+end
 ```
-2 - run `carthage update`
+Replace YOUR_TARGET_NAME and then, in the Podfile directory, type:
+
+`pod install --repo-update`
 
 ## Implementation
 1 - Initialize the payment using KingsPay G&S API as described in section 3 of the [Developer's Guide](https://kingspay-gs-api.kingsch.at/pdfs/kingspay_goods_and_services_merchant_integration.pdf)
@@ -35,26 +51,24 @@ github "kingschat/KingsPay-GS-iOS" "master"
         ),
         config: .init(
             paymentId: "payment_id",
-            clientId: "client_id",
-            environment: .staging
+            clientId: "client_id"
         )
     )
 ```
 
-`paymentId`: You can get the payment id as a result of initialize request ( API Documentations: [Production API](https://kingspay-gs-api.kingsch.at/docs/index.html#/Payment/Web_PaymentController_initialize), [Staging API](https://kpay-gs-api.appunite.net/docs/index.html#/Payment/Web_PaymentController_initialize) )
+`paymentId`: You can get the payment id as a result of initialize request ( [API Documentation](https://kingspay-gs-api.kingsch.at/docs/index.html#/Payment/Web_PaymentController_initialize) )
 
 `clientId`: You can get the client id from your merchant account.
 
-`environment`: There are two environments : `Staging` and `Production`. You can use `Staging` environment for testing.
-
-There are two possible outcomes you can get from the completion block:
+There are three possible outcomes you can get from the completion block:
 ``` swift
     public enum Result {
         case success
         case failure(Error)
+        case abandoned
     }
 ```
 
 ## Sample
 
-For more information check our [Sampe](https://github.com/kingschat/KingsPay-GS-iOS/tree/master/kingspay-gs/Sample) application.
+For more information check our [Sample application](https://github.com/kingschat/KingsPay-GS-iOS/tree/master/KingsPayGS-iOS-Sample).
