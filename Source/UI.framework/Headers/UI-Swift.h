@@ -213,6 +213,15 @@ SWIFT_CLASS("_TtC2UI23ActivityIndicatorButton")
 
 
 
+SWIFT_CLASS("_TtC2UI30BorderedTextFieldContainerView")
+@interface BorderedTextFieldContainerView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 SWIFT_CLASS("_TtC2UI15BottomSheetView")
 @interface BottomSheetView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
@@ -277,6 +286,15 @@ SWIFT_CLASS("_TtC2UI13LinkableLabel")
 
 
 
+SWIFT_CLASS("_TtC2UI22MultilineTextInputView")
+@interface MultilineTextInputView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 
 
 
@@ -288,6 +306,23 @@ SWIFT_CLASS("_TtC2UI9NeverView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
+
+SWIFT_CLASS("_TtC2UI16NewTextInputView")
+@interface NewTextInputView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITextField;
+
+@interface NewTextInputView (SWIFT_EXTENSION(UI)) <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 SWIFT_CLASS("_TtC2UI14RefreshControl")
@@ -313,6 +348,16 @@ SWIFT_CLASS("_TtC2UI16SketchShadowView")
 @end
 
 
+SWIFT_CLASS("_TtC2UI17StepIndicatorView")
+@interface StepIndicatorView : UIView
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 SWIFT_CLASS("_TtC2UI18TextInputErrorView")
 @interface TextInputErrorView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
@@ -322,14 +367,14 @@ SWIFT_CLASS("_TtC2UI18TextInputErrorView")
 
 
 
-SWIFT_CLASS("_TtC2UI13TextInputView")
+SWIFT_CLASS("_TtC2UI13TextInputView") SWIFT_DEPRECATED_MSG("Use NewTextInputView")
 @interface TextInputView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class UITextField;
 
 @interface TextInputView (SWIFT_EXTENSION(UI)) <UITextFieldDelegate>
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
@@ -338,6 +383,16 @@ SWIFT_CLASS("_TtC2UI13TextInputView")
 
 
 
+SWIFT_CLASS("_TtC2UI8TextView")
+@interface TextView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+@interface TextView (SWIFT_EXTENSION(UI)) <UITextViewDelegate>
+- (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -358,6 +413,21 @@ SWIFT_CLASS("_TtC2UI13TextInputView")
 
 
 
+
+
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC2UI32UnderlinedTextFieldContainerView")
+@interface UnderlinedTextFieldContainerView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
 
 
 

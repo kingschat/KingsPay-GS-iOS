@@ -182,7 +182,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
-@import Foundation;
 @import UI;
 @import UIKit;
 #endif
@@ -218,20 +217,14 @@ SWIFT_CLASS("_TtC4GSUI25GSActivityIndicatorButton")
 @end
 
 
+SWIFT_CLASS("_TtC4GSUI24GSTextFieldContainerView")
+@interface GSTextFieldContainerView : BorderedTextFieldContainerView
+@end
+
+
 SWIFT_CLASS("_TtC4GSUI15GSTextInputView")
-@interface GSTextInputView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@interface GSTextInputView : NewTextInputView
 @end
-
-@class UITextField;
-
-@interface GSTextInputView (SWIFT_EXTENSION(GSUI)) <UITextFieldDelegate>
-- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 
 
 
