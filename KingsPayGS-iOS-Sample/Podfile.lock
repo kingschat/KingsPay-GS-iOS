@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Amplitude (5.2.1)
-  - GS (0.1.9):
+  - GS (0.1.11):
     - AFNetworking (~> 4.0.1)
     - Amplitude (~> 5.2.1)
     - RxCocoa (~> 5.0.1)
@@ -39,7 +39,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Amplitude
-  - GS (= 0.1.9)
+  - GS (= 0.1.11)
   - RxCocoa
   - RxRelay
   - RxSwift
@@ -72,7 +72,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Amplitude: 9774e93d48d9f41f271a4479e06369a30ab31db1
-  GS: 1ad7edb706eff237eafcf26ed4fffaf703c7972a
+  GS: d79178f479109b48d127b48239e0667bc412a247
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
@@ -80,6 +80,6 @@ SPEC CHECKSUMS:
   SwiftProtobuf: 2cbd9409689b7df170d82a92a33443c8e3e14a70
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
 
-PODFILE CHECKSUM: 18be5ab1674f46b2680e9353f8ea5186d7173cc5
+PODFILE CHECKSUM: b50e3c718dc609a6b93e3c20a7c5d9ed02453e3b
 
 COCOAPODS: 1.9.3
