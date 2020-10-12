@@ -1,0 +1,51 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name GS
+import Commons
+import Foundation
+@_exported import GS
+import GSUI
+import RxCocoa
+import RxRelay
+import RxSwift
+import Services
+import Swift
+import SwiftyRSA
+import UI
+import UIKit.UIImage
+import UIKit
+import WebKit
+public enum GSBrand : Swift.String, Swift.Decodable, Swift.Equatable {
+  case visa
+  case amex
+  case mastercard
+  case mastercardNairaDebit
+  case discover
+  case jcb
+  case dinersClub
+  case unknown
+  case verve
+  case unionPay
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KingsPayForGoodsAndServices {
+  public enum Result {
+    case success
+    case failure(Swift.Error)
+    case abandoned
+  }
+  public struct PresentationContext {
+    public init(controller: UIKit.UIViewController, completion: @escaping (GS.KingsPayForGoodsAndServices.Result) -> Swift.Void)
+  }
+  public struct PaymentConfig {
+    public init(paymentId: Swift.String, clientId: Swift.String)
+  }
+  public static func pay(usingContext context: GS.KingsPayForGoodsAndServices.PresentationContext, config: GS.KingsPayForGoodsAndServices.PaymentConfig)
+}
+public struct ThreeDSecureData : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
