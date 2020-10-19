@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Vq4oJ0tjJuapg3RlzcXD2EZTd6Y=
+		OANFVcjwiUWNIsBEWSMv/iS9JuU=
 		</data>
 		<key>Headers/UI-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/UI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		EzT14eLUcI4Dx2n5BFYDAV9CRiY=
+		LCL8FQm/JWZWDtGVOmGiOSha8+Q=
 		</data>
 		<key>Modules/UI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/UI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		EzT14eLUcI4Dx2n5BFYDAV9CRiY=
+		LCL8FQm/JWZWDtGVOmGiOSha8+Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilj1JCa1tYKLYjqyJuDjOo92/A0YNTVklw7qMn6CTx0=
+			jJjYBDj862yLjCofP8M6vUi84IVRpvs7EHlSJCd5gog=
 			</data>
 		</dict>
 		<key>Headers/UI-Swift.h</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuGWfLyjAQb/N7jkVro5wQVSrbq28NjviqE1EFKIoEA=
+			sOnyhy1sxsHku5pwn4BaRH6qUeSvPA+MIRgkbvI7L/k=
 			</data>
 		</dict>
 		<key>Modules/UI.swiftmodule/arm64.swiftdoc</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuGWfLyjAQb/N7jkVro5wQVSrbq28NjviqE1EFKIoEA=
+			sOnyhy1sxsHku5pwn4BaRH6qUeSvPA+MIRgkbvI7L/k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
