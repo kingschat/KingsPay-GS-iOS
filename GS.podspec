@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                           = "GS"
-    s.version                        = "0.1.11"
+    s.version                        = "0.1.12"
     s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
