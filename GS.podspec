@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                           = "GS"
-    s.version                        = "0.1.16"
+    s.version                        = "0.2.0"
     s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
@@ -10,16 +10,17 @@ Pod::Spec.new do |s|
     s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
     s.source_files                   = "Source/GS.framework/Headers/*.h"
-    s.dependency                     'RxSwift'
-	s.dependency                     'RxRelay'
-    s.dependency                     'RxCocoa'
+    s.dependency                     'RxSwift', '~> 6.0.0-rc.1'
+	s.dependency                     'RxRelay', '~> 6.0.0-rc.1'
+    s.dependency                     'RxCocoa', '~> 6.0.0-rc.1'
     s.dependency                     'AFNetworking', '~> 4.0.1'
     s.dependency                     'SPTPersistentCache'
-    s.dependency                     'SwiftyRSA'
-    s.dependency                     'SwiftProtobuf'
-    s.dependency                     'Amplitude'
+    s.dependency                     'SwiftyRSA', '~> 1.6.0'
+    s.dependency                     'SwiftProtobuf', '~> 1.12.0'
+    s.dependency                     'Amplitude', '~> 7.1.0'
+    s.dependency                     'Stripe', '~> 20.1.1'
     s.platform                       = :ios
-    s.swift_version                  = "5.3"
+    s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
     s.license                        = { :type => 'Apache License 2.0', :text => <<-LICENSE
     Apache License

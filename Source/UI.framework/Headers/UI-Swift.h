@@ -236,12 +236,28 @@ SWIFT_CLASS("_TtC2UI15BottomSheetView")
 
 
 
+
 SWIFT_CLASS("_TtC2UI14CurrenciesView")
 @interface CurrenciesView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+
+SWIFT_CLASS("_TtC2UI19DottedTextInputView")
+@interface DottedTextInputView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITextField;
+
+@interface DottedTextInputView (SWIFT_EXTENSION(UI)) <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+@end
 
 @class UITraitCollection;
 
@@ -253,6 +269,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 SWIFT_CLASS("_TtC2UI25KPActivityIndicatorButton")
@@ -310,7 +327,6 @@ SWIFT_CLASS("_TtC2UI16NewTextInputView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class UITextField;
 
 @interface NewTextInputView (SWIFT_EXTENSION(UI)) <UITextFieldDelegate>
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
