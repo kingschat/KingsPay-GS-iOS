@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     DESC
     s.homepage                       = "https://kingspay-gs.com"
     s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com", "Fatih Emre" => "emre.fatih@appunite.com", "Hubert Drąg" => "hubert.drag@appunite.com" }
-    s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
+    s.source                         = { :git => "https://github.com/kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
     s.source_files                   = "Source/GS.framework/Headers/*.h"
     s.dependency                     'RxSwift', '~> 6.0.0-rc.1'
