@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.dependency                     'SPTPersistentCache'
     s.dependency                     'SwiftyRSA', '~> 1.6.0'
     s.dependency                     'SwiftProtobuf', '~> 1.12.0'
-    s.dependency                     'Amplitude', '~> v7.1.0'
+    s.dependency                     'Amplitude', '~> 7.1.0'
     s.dependency                     'Stripe', '~> 20.1.1'
     s.platform                       = :ios
     s.swift_version                  = "5.0"
