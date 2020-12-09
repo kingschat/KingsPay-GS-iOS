@@ -50,7 +50,7 @@ DEPENDENCIES:
 SPEC REPOS:
   "git@github.com:kingschat/KingsPay-GS-iOS.git":
     - GS
-  trunk:
+  https://cdn.cocoapods.org/:
     - AFNetworking
     - Amplitude
     - RxCocoa
