@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
+    s.pod_target_xcconfig            = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+    s.user_target_xcconfig           = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
     s.license                        = { :type => 'Apache License 2.0', :text => <<-LICENSE
     Apache License
     Version 2.0, January 2004
