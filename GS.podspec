@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                           = "GS"
-    s.version                        = "0.2.0"
+    s.version                        = "0.2.1"
     s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks            = "Source/*.framework"
     s.source_files                   = "Source/GS.framework/Headers/*.h"
     s.dependency                     'RxSwift', '~> 6.0.0-rc.1'
-	s.dependency                     'RxRelay', '~> 6.0.0-rc.1'
+    s.dependency                     'RxRelay', '~> 6.0.0-rc.1'
     s.dependency                     'RxCocoa', '~> 6.0.0-rc.1'
     s.dependency                     'AFNetworking', '~> 4.0.1'
     s.dependency                     'SPTPersistentCache'
