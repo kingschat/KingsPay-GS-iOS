@@ -6,4 +6,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
-gem "cocoapods", "~> 1.9"
+gem "cocoapods", "~> 1.10.0"
