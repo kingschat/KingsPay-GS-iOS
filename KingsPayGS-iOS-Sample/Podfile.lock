@@ -1,0 +1,90 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Amplitude (7.1.1)
+  - GS (0.2.0):
+    - AFNetworking (~> 4.0.1)
+    - Amplitude (~> 7.1.0)
+    - RxCocoa (~> 6.0.0-rc.1)
+    - RxRelay (~> 6.0.0-rc.1)
+    - RxSwift (~> 6.0.0-rc.1)
+    - SPTPersistentCache
+    - Stripe (~> 21.1.0)
+    - SwiftProtobuf (~> 1.12.0)
+    - SwiftyRSA (~> 1.6.0)
+  - RxCocoa (6.0.0-rc.2):
+    - RxRelay (= 6.0.0-rc.2)
+    - RxSwift (= 6.0.0-rc.2)
+  - RxRelay (6.0.0-rc.2):
+    - RxSwift (= 6.0.0-rc.2)
+  - RxSwift (6.0.0-rc.2)
+  - SPTPersistentCache (1.1.1)
+  - Stripe (21.1.0)
+  - SwiftProtobuf (1.12.0)
+  - SwiftyRSA (1.6.0):
+    - SwiftyRSA/ObjC (= 1.6.0)
+  - SwiftyRSA/ObjC (1.6.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Amplitude
+  - GS (= 0.2.0)
+  - RxCocoa (= 6.0.0-rc.2)
+  - RxRelay (= 6.0.0-rc.2)
+  - RxSwift (= 6.0.0-rc.2)
+  - SPTPersistentCache (from `https://github.com/spotify/SPTPersistentCache`, commit `697e464b6173063f526ec57f42221a4a94dcc86a`)
+  - Stripe
+  - SwiftProtobuf
+  - SwiftyRSA
+
+SPEC REPOS:
+  "git@github.com:kingschat/KingsPay-GS-iOS.git":
+    - GS
+  https://cdn.cocoapods.org/:
+    - AFNetworking
+    - Amplitude
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Stripe
+    - SwiftProtobuf
+    - SwiftyRSA
+
+EXTERNAL SOURCES:
+  SPTPersistentCache:
+    :commit: 697e464b6173063f526ec57f42221a4a94dcc86a
+    :git: https://github.com/spotify/SPTPersistentCache
+
+CHECKOUT OPTIONS:
+  SPTPersistentCache:
+    :commit: 697e464b6173063f526ec57f42221a4a94dcc86a
+    :git: https://github.com/spotify/SPTPersistentCache
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Amplitude: 722d352df11f008571e8ef82faaa905984d06178
+  GS: 66b7655fe6708290945ea70f87a9a2ebc55d0bca
+  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
+  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
+  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
+  SPTPersistentCache: e963e9dfaf612996b0d3898bd17809047cc3f1f0
+  Stripe: 006b519b33936ebd9508bd2ade2311fdbe8bbd4c
+  SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
+  SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
+
+PODFILE CHECKSUM: 288da3e6e854ae7568da60ee8eaf46a32a403277
+
+COCOAPODS: 1.10.0
