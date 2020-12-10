@@ -109,6 +109,7 @@
 			buildConfigurationList = 2D6B792D24DC0B7B00805846 /* Build configuration list for PBXNativeTarget "KingsPayGS-iOS-Sample" */;
 			buildPhases = (
 				EFD697399A20643873BCBC38 /* [CP] Check Pods Manifest.lock */,
+				76EE0AF6EE75642C79AF0CA5 /* [CP] Prepare Artifacts */,
 				2D6B791524DC0B7800805846 /* Sources */,
 				2D6B791624DC0B7800805846 /* Frameworks */,
 				2D6B791724DC0B7800805846 /* Resources */,
@@ -186,6 +187,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76EE0AF6EE75642C79AF0CA5 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingsPayGS-iOS-Sample/Pods-KingsPayGS-iOS-Sample-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EFD697399A20643873BCBC38 /* [CP] Check Pods Manifest.lock */ = {

@@ -14,36 +14,39 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Amplitude (5.2.1)
-  - GS (0.1.11):
+  - Amplitude (7.1.1)
+  - GS (0.2.1):
     - AFNetworking (~> 4.0.1)
-    - Amplitude (~> 5.2.1)
-    - RxCocoa (~> 5.0.1)
-    - RxRelay (~> 5.0.1)
-    - RxSwift (~> 5.0.1)
+    - Amplitude (~> 7.1.0)
+    - RxCocoa (~> 6.0.0-rc.1)
+    - RxRelay (~> 6.0.0-rc.1)
+    - RxSwift (~> 6.0.0-rc.1)
     - SPTPersistentCache
-    - SwiftProtobuf (~> 1.8.0)
-    - SwiftyRSA (~> 1.5.0)
-  - RxCocoa (5.0.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.0.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+    - Stripe (~> 21.1.0)
+    - SwiftProtobuf (~> 1.12.0)
+    - SwiftyRSA (~> 1.6.0)
+  - RxCocoa (6.0.0-rc.2):
+    - RxRelay (= 6.0.0-rc.2)
+    - RxSwift (= 6.0.0-rc.2)
+  - RxRelay (6.0.0-rc.2):
+    - RxSwift (= 6.0.0-rc.2)
+  - RxSwift (6.0.0-rc.2)
   - SPTPersistentCache (1.1.1)
-  - SwiftProtobuf (1.8.0)
-  - SwiftyRSA (1.5.0):
-    - SwiftyRSA/ObjC (= 1.5.0)
-  - SwiftyRSA/ObjC (1.5.0)
+  - Stripe (21.1.0)
+  - SwiftProtobuf (1.12.0)
+  - SwiftyRSA (1.6.0):
+    - SwiftyRSA/ObjC (= 1.6.0)
+  - SwiftyRSA/ObjC (1.6.0)
 
 DEPENDENCIES:
   - AFNetworking
   - Amplitude
-  - GS (= 0.1.11)
+  - GS (= 0.2.1)
   - RxCocoa
   - RxRelay
   - RxSwift
   - SPTPersistentCache (from `https://github.com/spotify/SPTPersistentCache`, commit `697e464b6173063f526ec57f42221a4a94dcc86a`)
+  - Stripe
   - SwiftProtobuf
   - SwiftyRSA
 
@@ -56,6 +59,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - Stripe
     - SwiftProtobuf
     - SwiftyRSA
 
@@ -71,15 +75,16 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  Amplitude: 9774e93d48d9f41f271a4479e06369a30ab31db1
-  GS: d79178f479109b48d127b48239e0667bc412a247
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  Amplitude: 722d352df11f008571e8ef82faaa905984d06178
+  GS: 03a01e5fb23647be6547433a2959d46c99e6f233
+  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
+  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
+  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
   SPTPersistentCache: e963e9dfaf612996b0d3898bd17809047cc3f1f0
-  SwiftProtobuf: 2cbd9409689b7df170d82a92a33443c8e3e14a70
-  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  Stripe: 006b519b33936ebd9508bd2ade2311fdbe8bbd4c
+  SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
+  SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
 
-PODFILE CHECKSUM: b50e3c718dc609a6b93e3c20a7c5d9ed02453e3b
+PODFILE CHECKSUM: a8b0c36c30affeca987a590c2d46892b602e2682
 
 COCOAPODS: 1.9.3

@@ -13,5 +13,6 @@ target 'KingsPayGS-iOS-Sample' do
     pod 'SwiftyRSA'
 	pod 'Amplitude'
 	pod 'SwiftProtobuf'
-    pod 'GS', '0.1.11', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
+	pod 'Stripe'
+    pod 'GS', '0.2.1', :source => "git@github.com:kingschat/KingsPay-GS-iOS.git"
 end
