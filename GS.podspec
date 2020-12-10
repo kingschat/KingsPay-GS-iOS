@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.dependency                     'SwiftyRSA', '~> 1.6.0'
     s.dependency                     'SwiftProtobuf', '~> 1.12.0'
     s.dependency                     'Amplitude', '~> 7.1.0'
-    s.dependency                     'Stripe', '~> 20.1.1'
+    s.dependency                     'Stripe', '~> 21.1.0'
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
