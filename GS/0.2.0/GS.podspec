@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
     s.source                         = { :git => "https://github.com/kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
     s.source_files                   = "Source/GS.framework/Headers/*.h"
-    s.dependency                     'RxSwift', '~> 6.0.0-rc.2'
-    s.dependency                     'RxRelay', '~> 6.0.0-rc.2'
-    s.dependency                     'RxCocoa', '~> 6.0.0-rc.2'
+    s.dependency                     'RxSwift', '~> 6.0.0-rc.1'
+    s.dependency                     'RxRelay', '~> 6.0.0-rc.1'
+    s.dependency                     'RxCocoa', '~> 6.0.0-rc.1'
     s.dependency                     'AFNetworking', '~> 4.0.1'
     s.dependency                     'SPTPersistentCache'
     s.dependency                     'SwiftyRSA', '~> 1.6.0'
