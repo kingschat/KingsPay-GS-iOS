@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/GS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wFNun5dCkb+1NkKO6m/+FfchKjE=
+		gxu0decQ74UbSWxSlsypFx+CjQU=
 		</data>
 		<key>Modules/GS.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/GS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wFNun5dCkb+1NkKO6m/+FfchKjE=
+		gxu0decQ74UbSWxSlsypFx+CjQU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aabIIfdn3YrEK1H29AdSAG5Zz6j/5TEk0H4wfaQVMDg=
+			0AGhLRU7GI7MQ8hyk9UD2mnggupzM0EKvhFExvVa1wI=
 			</data>
 		</dict>
 		<key>Modules/GS.swiftmodule/arm64.swiftdoc</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aabIIfdn3YrEK1H29AdSAG5Zz6j/5TEk0H4wfaQVMDg=
+			0AGhLRU7GI7MQ8hyk9UD2mnggupzM0EKvhFExvVa1wI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

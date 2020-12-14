@@ -17,10 +17,7 @@ class ViewController: UIViewController {
                 controller: self,
                 completion: { paymentResult in print(paymentResult) }
             ),
-            config: KingsPayForGoodsAndServices.PaymentConfig(
-                paymentId: "YOUR_PAYMENT_ID",
-                clientId: "YOUR_CLIENT_ID"
-            )
+            paymentId: "YOUR_PAYMENT_ID"
         )
     }
 }
