@@ -18,9 +18,9 @@ PODS:
   - GS (0.2.0):
     - AFNetworking (~> 4.0.1)
     - Amplitude (~> 7.1.0)
-    - RxCocoa (~> 6.0.0-rc.1)
-    - RxRelay (~> 6.0.0-rc.1)
-    - RxSwift (~> 6.0.0-rc.1)
+    - RxCocoa (~> 6.0.0-rc.2)
+    - RxRelay (~> 6.0.0-rc.2)
+    - RxSwift (~> 6.0.0-rc.2)
     - SPTPersistentCache
     - Stripe (~> 20.1.0)
     - SwiftProtobuf (~> 1.12.0)
@@ -76,7 +76,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Amplitude: 722d352df11f008571e8ef82faaa905984d06178
-  GS: 79ca9a235b48f47ea3112fb9a22dd1338eec5cfb
+  GS: d0dd945229d0033ebd4f698dbe17ccfb8bbd6e48
   RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
   RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
   RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
