@@ -18,19 +18,19 @@ PODS:
   - GS (0.2.0):
     - AFNetworking (~> 4.0.1)
     - Amplitude (~> 7.1.0)
-    - RxCocoa (~> 6.0.0-rc.2)
-    - RxRelay (~> 6.0.0-rc.2)
-    - RxSwift (~> 6.0.0-rc.2)
+    - RxCocoa (~> 6.0.0-rc.1)
+    - RxRelay (~> 6.0.0-rc.1)
+    - RxSwift (~> 6.0.0-rc.1)
     - SPTPersistentCache
     - Stripe (~> 20.1.0)
     - SwiftProtobuf (~> 1.12.0)
     - SwiftyRSA (~> 1.6.0)
-  - RxCocoa (6.0.0-rc.2):
-    - RxRelay (= 6.0.0-rc.2)
-    - RxSwift (= 6.0.0-rc.2)
-  - RxRelay (6.0.0-rc.2):
-    - RxSwift (= 6.0.0-rc.2)
-  - RxSwift (6.0.0-rc.2)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
   - SPTPersistentCache (1.1.1)
   - Stripe (20.1.1)
   - SwiftProtobuf (1.12.0)
@@ -42,9 +42,9 @@ DEPENDENCIES:
   - AFNetworking
   - Amplitude
   - GS (= 0.2.0)
-  - RxCocoa (= 6.0.0-rc.2)
-  - RxRelay (= 6.0.0-rc.2)
-  - RxSwift (= 6.0.0-rc.2)
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxRelay (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
   - SPTPersistentCache (from `https://github.com/spotify/SPTPersistentCache`, commit `697e464b6173063f526ec57f42221a4a94dcc86a`)
   - Stripe
   - SwiftProtobuf
@@ -76,15 +76,15 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Amplitude: 722d352df11f008571e8ef82faaa905984d06178
-  GS: d0dd945229d0033ebd4f698dbe17ccfb8bbd6e48
-  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
-  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
-  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
+  GS: 79ca9a235b48f47ea3112fb9a22dd1338eec5cfb
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
   SPTPersistentCache: e963e9dfaf612996b0d3898bd17809047cc3f1f0
   Stripe: 2cb10595133247a96ece092eb0614786c604382f
   SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
   SwiftyRSA: 3b9c9179744217951facc6a3e9ae8d8c97061ffa
 
-PODFILE CHECKSUM: 288da3e6e854ae7568da60ee8eaf46a32a403277
+PODFILE CHECKSUM: dda9e06e1935e9003d65b47f5d82fcba936cdeb1
 
 COCOAPODS: 1.10.0

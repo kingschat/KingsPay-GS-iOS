@@ -6,9 +6,9 @@ platform :ios, '11.0'
 target 'KingsPayGS-iOS-Sample' do
     use_frameworks!
     pod 'AFNetworking'
-    pod 'RxSwift', '6.0.0-rc.2'
-    pod 'RxRelay', '6.0.0-rc.2'
-    pod 'RxCocoa', '6.0.0-rc.2'
+    pod 'RxSwift', '6.0.0-rc.1'
+    pod 'RxRelay', '6.0.0-rc.1'
+    pod 'RxCocoa', '6.0.0-rc.1'
     pod 'SPTPersistentCache', :git => 'https://github.com/spotify/SPTPersistentCache', :commit => '697e464b6173063f526ec57f42221a4a94dcc86a'
     pod 'SwiftyRSA'
 	pod 'Amplitude'
