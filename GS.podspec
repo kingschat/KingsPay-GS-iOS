@@ -1,29 +1,26 @@
 Pod::Spec.new do |s|
     s.name                           = "GS"
-    s.version                        = "0.2.0"
+    s.version                        = "0.1.9"
     s.summary                        = "KingsPay for Goods&Services SDK"
     s.description                    = <<-DESC
     Allows Merchants registered at https://kingspay-gs.com to integrate with KingsPay payment system.
     DESC
     s.homepage                       = "https://kingspay-gs.com"
     s.author                         = { "Damian Kolasinski" => "damian.kolasinski@appunite.com", "Fatih Emre" => "emre.fatih@appunite.com", "Hubert Drąg" => "hubert.drag@appunite.com" }
-    s.source                         = { :git => "https://github.com/kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
+    s.source                         = { :git => "git@github.com:kingschat/KingsPay-GS-iOS.git", :tag => "#{s.version}" }
     s.vendored_frameworks            = "Source/*.framework"
     s.source_files                   = "Source/GS.framework/Headers/*.h"
-    s.dependency                     'RxSwift', '~> 6.0.0-rc.1'
-    s.dependency                     'RxRelay', '~> 6.0.0-rc.1'
-    s.dependency                     'RxCocoa', '~> 6.0.0-rc.1'
+    s.dependency                     'RxSwift', '~> 5.0.1'
+	s.dependency                     'RxRelay', '~> 5.0.1'
+    s.dependency                     'RxCocoa', '~> 5.0.1'
     s.dependency                     'AFNetworking', '~> 4.0.1'
     s.dependency                     'SPTPersistentCache'
-    s.dependency                     'SwiftyRSA', '~> 1.6.0'
-    s.dependency                     'SwiftProtobuf', '~> 1.12.0'
-    s.dependency                     'Amplitude', '~> 7.1.0'
-    s.dependency                     'Stripe', '~> 20.1.0'
+    s.dependency                     'SwiftyRSA', '~> 1.5.0'
+    s.dependency                     'SwiftProtobuf', '~> 1.8.0'
+    s.dependency                     'Amplitude', '~> 5.2.1'
     s.platform                       = :ios
     s.swift_version                  = "5.0"
     s.ios.deployment_target          = '11.0'
-    s.pod_target_xcconfig            = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-    s.user_target_xcconfig           = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
     s.license                        = { :type => 'Apache License 2.0', :text => <<-LICENSE
     Apache License
     Version 2.0, January 2004
