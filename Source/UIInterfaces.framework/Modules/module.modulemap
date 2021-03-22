@@ -1,0 +1,11 @@
+framework module UIInterfaces {
+  umbrella header "UIInterfaces.h"
+
+  export *
+  module * { export * }
+}
+
+module UIInterfaces.Swift {
+    header "UIInterfaces-Swift.h"
+    requires objc
+}

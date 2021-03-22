@@ -217,6 +217,23 @@ SWIFT_CLASS("_TtC2UI23ActivityIndicatorButton")
 @end
 
 
+@class UITraitCollection;
+
+SWIFT_CLASS("_TtC2UI14BorderedButton")
+@interface BorderedButton : UIButton
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC2UI26BorderedCollectionViewCell")
+@interface BorderedCollectionViewCell : UICollectionViewCell
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC2UI30BorderedTextFieldContainerView")
 @interface BorderedTextFieldContainerView : UIView
@@ -224,6 +241,14 @@ SWIFT_CLASS("_TtC2UI30BorderedTextFieldContainerView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+
+SWIFT_CLASS("_TtC2UI12BorderedView")
+@interface BorderedView : UIView
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC2UI15BottomSheetView")
@@ -259,7 +284,6 @@ SWIFT_CLASS("_TtC2UI19DottedTextInputView")
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UITraitCollection;
 
 SWIFT_CLASS("_TtC2UI12GradientView")
 @interface GradientView : UIView
@@ -270,11 +294,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
 
-
-
-SWIFT_CLASS("_TtC2UI25KPActivityIndicatorButton")
-@interface KPActivityIndicatorButton : ActivityIndicatorButton
-@end
 
 
 SWIFT_CLASS("_TtC2UI12KeyboardView")
@@ -292,6 +311,7 @@ SWIFT_CLASS("_TtC2UI13LinkableLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 @class UITextView;
 
@@ -334,6 +354,7 @@ SWIFT_CLASS("_TtC2UI16NewTextInputView")
 
 
 
+
 SWIFT_CLASS("_TtC2UI14RefreshControl")
 @interface RefreshControl : UIRefreshControl
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
@@ -360,6 +381,14 @@ SWIFT_CLASS("_TtC2UI16SketchShadowView")
 SWIFT_CLASS("_TtC2UI17StepIndicatorView")
 @interface StepIndicatorView : UIView
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+SWIFT_CLASS("_TtC2UI24TextInputAccessoriesView")
+@interface TextInputAccessoriesView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -374,9 +403,9 @@ SWIFT_CLASS("_TtC2UI18TextInputErrorView")
 
 
 
-SWIFT_CLASS("_TtC2UI13TextInputView") SWIFT_DEPRECATED_MSG("Use NewTextInputView")
+SWIFT_CLASS("_TtC2UI13TextInputView")
 @interface TextInputView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
 - (BOOL)becomeFirstResponder SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -390,7 +419,7 @@ SWIFT_CLASS("_TtC2UI13TextInputView") SWIFT_DEPRECATED_MSG("Use NewTextInputView
 
 
 SWIFT_CLASS("_TtC2UI8TextView")
-@interface TextView : UIView
+@interface TextView : BorderedView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -399,6 +428,7 @@ SWIFT_CLASS("_TtC2UI8TextView")
 @interface TextView (SWIFT_EXTENSION(UI)) <UITextViewDelegate>
 - (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
